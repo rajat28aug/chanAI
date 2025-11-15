@@ -1,0 +1,118 @@
+# AI Study Buddy - Project Dependencies
+# This file lists all dependencies and modules for both client and server
+# Note: This is a Node.js project. Dependencies are managed via package.json files.
+# Use: npm install (in respective directories) to install dependencies.
+
+# ============================================
+# SERVER DEPENDENCIES (Production)
+# ============================================
+# Location: server/package.json
+# Install: cd server && npm install
+
+body-parser@^2.2.0
+cors@^2.8.5
+dotenv@^17.2.3
+express@^5.1.0
+groq-sdk@^0.34.0
+mongoose@^8.19.3
+multer@^2.0.2
+pdf-parse@^2.4.5
+tesseract.js@^6.0.1
+together-ai@^0.30.0
+uuid@^13.0.0
+
+# ============================================
+# CLIENT DEPENDENCIES (Production)
+# ============================================
+# Location: client/package.json
+# Install: cd client && npm install
+
+axios@^1.13.2
+pdfjs-dist@^5.4.394
+react@^19.1.1
+react-dom@^19.1.1
+react-pdf@^10.2.0
+react-router-dom@^7.9.5
+recharts@^3.3.0
+
+# ============================================
+# CLIENT DEV DEPENDENCIES (Development Only)
+# ============================================
+# Location: client/package.json (devDependencies)
+# Install: cd client && npm install
+
+@eslint/js@^9.36.0
+@tailwindcss/postcss@^4.1.16
+@types/react@^19.1.16
+@types/react-dom@^19.1.9
+@vitejs/plugin-react@^5.0.4
+autoprefixer@^10.4.21
+eslint@^9.36.0
+eslint-plugin-react-hooks@^5.2.0
+eslint-plugin-react-refresh@^0.4.22
+globals@^16.4.0
+postcss@^8.5.6
+tailwindcss@^4.1.16
+vite@^7.1.7
+
+# ============================================
+# INSTALLATION INSTRUCTIONS
+# ============================================
+# 
+# 1. Install Server Dependencies:
+#    cd server
+#    npm install
+#
+# 2. Install Client Dependencies:
+#    cd client
+#    npm install
+#
+# 3. Create .env file in server directory:
+#    GROQ_API_KEY=your_groq_api_key_here
+#    MONGODB_URI=your_mongodb_uri_here
+#    PORT=4000
+#
+# 4. Run Server:
+#    cd server
+#    npm run dev
+#
+# 5. Run Client:
+#    cd client
+#    npm run dev
+#
+# ============================================
+# DEPENDENCY DESCRIPTIONS
+# ============================================
+#
+# SERVER:
+# - express: Web framework for Node.js
+# - mongoose: MongoDB object modeling
+# - multer: File upload middleware
+# - pdf-parse: PDF text extraction
+# - groq-sdk: Groq AI API client
+# - together-ai: Together AI API client
+# - tesseract.js: OCR (Optical Character Recognition)
+# - cors: Cross-Origin Resource Sharing
+# - body-parser: Request body parsing
+# - dotenv: Environment variable management
+# - uuid: UUID generation
+#
+# CLIENT:
+# - react: UI library
+# - react-dom: React DOM rendering
+# - react-router-dom: Client-side routing
+# - axios: HTTP client
+# - vite: Build tool and dev server
+# - tailwindcss: CSS framework
+# - recharts: Chart library
+# - react-pdf: PDF rendering in React
+# - pdfjs-dist: PDF.js library
+#
+# ============================================
+# NOTE
+# ============================================
+# This is a Node.js project. The actual dependency management
+# is done through package.json files. This requirements.txt
+# is provided for reference and documentation purposes.
+# For exact versions and updates, check package.json files.
+
